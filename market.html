@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market – StockWave</title>
+  <link rel="stylesheet" href="assets/css/market.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page-container">
+    <header class="header">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="StockWave Logo" />
+        <h1>StockWave</h1>
+      </div>
+
+      <nav class="desktop">
+        <a href="index.html">Home</a>
+        <a href="market.html" class="active">Market</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="upgrade.html">Pro Version</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+
+      <div class="burger" onclick="toggleMobileNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav class="mobile" id="mobileNav">
+        <a href="index.html">Home</a>
+        <a href="market.html" class="active">Market</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="upgrade.html">Pro Version</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="section">
+        <div class="card news-list">
+          <h3>Latest News</h3>
+
+          <div class="news-card">
+            <div class="news-header">
+              <img src="images/us30.svg" alt="US Flag" class="news-avatar" />
+              <div class="news-source">
+                <strong>US30 News</strong>
+                <span class="verified-badge">✔</span>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="news-title">Trump Reiterates Iran-Israel Ceasefire</div>
+              <div class="news-snippet">US equity futures rose Tuesday after President Trump reiterated...</div>
+            </div>
+            <div class="news-footer">
+              <span>⬆️ 1</span><span>💬 0</span><span>🕒 16m</span>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <div class="news-header">
+              <img src="images/news.png" alt="News" class="news-avatar" />
+              <div class="news-source">
+                <strong>General News</strong>
+                <span class="verified-badge">✔</span>
+              </div>
+            </div>
+            <div class="news-content">
+              <div class="news-title">Middle East Ceasefire Boosts Europe</div>
+              <div class="news-snippet">European markets surged after announcement of ceasefire agreement...</div>
+            </div>
+            <div class="news-footer">
+              <span>⬆️ 0</span><span>💬 0</span><span>🕒 49m</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card stocks">
+          <h3>Stocks</h3>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>StockWave</strong> info@stockwave.com
+      </div>
+      <div class="footer-links">
+        <a href="#">Legal documents</a>
+        <a href="#">Cookies</a>
+        <a href="#">Fraud prevention</a>
+        <a href="#">Client vulnerability</a>
+      </div>
+      <p>© 2025 StockWave Ltd., All rights reserved.</p>
+    </footer>
+  </div>
+
+  <div id="stockModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Loading...</h2>
+      <div id="chartContainer" class="chart-wrapper"></div>
+      <div id="modalCompanyInfo" class="company-info"></div>
+    </div>
+  </div>
+
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script src="assets/js/market.js"></script>
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById("mobileNav");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

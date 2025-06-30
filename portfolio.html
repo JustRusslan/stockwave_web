@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – StockWave</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="StockWave Logo" />
+      <h1>StockWave</h1>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="market.html">Market</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="upgrade.html">Pro Version</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+
+    <div class="burger" onclick="toggleMobileNav()">
+      <div></div><div></div><div></div>
+    </div>
+  </header>
+
+  <nav id="mobileNav" class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="market.html">Market</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="upgrade.html">Pro Version</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+
+  <main>
+    <div class="card value-card">
+      <h3>Value</h3>
+      <div class="balance">
+        €12,480.30
+        <button title="Info">ℹ️</button>
+      </div>
+      <div class="growth">
+        <span class="profit">+€382.12</span>
+        <span>+3.16%</span>
+      </div>
+      <div class="graph-placeholder">
+        <img src="images/chart.jpg" alt="Portfolio Chart" />
+      </div>
+      <div class="range-buttons">
+        <button>1D</button>
+        <button>1W</button>
+        <button>1M</button>
+        <button>3M</button>
+        <button>1Y</button>
+        <button>MAX</button>
+      </div>
+    </div>
+
+    <div class="card cash-card">
+      <h3>Cash €0.00</h3>
+      <div>Main Pot<br><strong>€0.00</strong></div>
+      <div class="spending-pot">Spending Pot<br><strong>€0.00</strong></div>
+
+      <div class="actions">
+        <button>Deposit</button>
+        <button>Move cash</button>
+        <button>Withdraw</button>
+      </div>
+
+      <div class="investments-section">
+        <div class="section-title">Investments €12,480.30</div>
+
+        <div class="investment-item">
+          <div class="investment-name">
+            <strong>Quantum Robotics</strong><br />
+            ISIN: QR0001
+          </div>
+          <div class="investment-value negative">
+            €12,480.30<br />
+            −€300.00 (−2.35%)
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div><strong>StockWave</strong> info@stockwave.com</div>
+    <div class="footer-links">
+      <a href="#">Legal documents</a>
+      <a href="#">Cookies</a>
+      <a href="#">Fraud prevention</a>
+      <a href="#">Client vulnerability</a>
+    </div>
+    <p>© 2025 StockWave Ltd., All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById("mobileNav");
+      nav.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

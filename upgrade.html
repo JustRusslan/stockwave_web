@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upgrade to Pro – StockWave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/upgrade.css" />
+</head>
+<body>
+  <div class="page-container">
+    <header class="header">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="StockWave Logo" />
+        <h1>StockWave</h1>
+      </div>
+      <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="nav desktop">
+        <a href="index.html">Home</a>
+        <a href="market.html">Market</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="upgrade.html" class="active">Pro Version</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+      <nav class="nav mobile" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="market.html">Market</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="upgrade.html" class="active">Pro Version</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="upgrade-title">Unlock the full power of StockWave</h2>
+      <p class="upgrade-subtitle">Choose the plan that fits your investing ambition.</p>
+
+      <div class="plans-container">
+        <div class="plan-card">
+          <h3>Basic</h3>
+          <div class="price">€0<span>/mo</span></div>
+          <ul>
+            <li>1 chart per tab</li>
+            <li>3 indicators per chart</li>
+            <li>10 price alerts</li>
+            <li>Standard support</li>
+          </ul>
+          <button class="btn-disabled" disabled>Current Plan</button>
+        </div>
+
+        <div class="plan-card highlight">
+          <h3>Pro</h3>
+          <div class="price">€29.95<span>/mo</span></div>
+          <ul>
+            <li>5 charts per tab</li>
+            <li>15 indicators per chart</li>
+            <li>100 price alerts</li>
+            <li>Priority support</li>
+          </ul>
+          <button class="btn-primary">Upgrade Now</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>StockWave</strong> info@stockwave.com
+      </div>
+      <div class="footer-links">
+        <a href="#">Legal documents</a>
+        <a href="#">Cookies</a>
+        <a href="#">Fraud prevention</a>
+        <a href="#">Client vulnerability</a>
+      </div>
+      <p>© 2025 StockWave Ltd., All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
