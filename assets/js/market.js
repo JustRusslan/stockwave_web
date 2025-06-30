@@ -1,4 +1,4 @@
-const apiKey = "a94c9e9d6971cbacf100da9b78e47c53";
+const apiKey = "1b0927eae90c42496608f64e28f1e2ff";
 const stockSymbols = ["AAPL", "GOOGL", "MSFT"];
 
 const companyInfo = {
