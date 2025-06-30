@@ -24,6 +24,11 @@ It provides a sleek and modern layout for market data visualization using HTML, 
 ┣ 📄 market.html
 ┣ 📄 README.md
 
+Technologies Used
+- HTML5
+- CSS3 (Flexbox, Media Queries)
+- JavaScript (DOM, Fetch API)
+
 API Limit Notice
 This project uses a free API key which is limited to 100 requests per day.
 If you'd like to use it for your own purposes or in production, you should insert your own API key inside assets/market.js to avoid hitting the daily limit.
